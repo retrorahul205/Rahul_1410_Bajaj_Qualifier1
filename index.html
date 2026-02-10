@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bajaj Finserve Health Challenge</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 { color: #333; }
+        .endpoint {
+            background: #f0f0f0;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+        .method {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 3px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .get { background: #61affe; color: white; }
+        .post { background: #49cc90; color: white; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🏥 Bajaj Finserve Health Challenge API</h1>
+        <p><strong>Student:</strong> Rahul (Roll: 1410)</p>
+        <p><strong>Email:</strong> rahul1410.be23@chitkara.edu.in</p>
+        
+        <h2>Available Endpoints:</h2>
+        
+        <div class="endpoint">
+            <span class="method get">GET</span>
+            <code>/health</code>
+            <p>Returns API health status and email</p>
+        </div>
+        
+        <div class="endpoint">
+            <span class="method post">POST</span>
+            <code>/bfhl</code>
+            <p>Main endpoint supporting: fibonacci, prime, lcm, hcf, ai</p>
+        </div>
+
+        <h2>Example Usage:</h2>
+        <pre>
+POST /bfhl
+{
+  "fibonacci": 10
+}
+
+POST /bfhl
+{
+  "ai": "What is the capital of France?"
+}
+        </pre>
+    </div>
+</body>
+</html>
